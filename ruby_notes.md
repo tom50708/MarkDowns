@@ -1,17 +1,19 @@
 #Basic
 ```ruby
 user_input = gets.chomp # user input
-user_input.upcase! #change all to upper case
-user_input.downcase! #change all to lower case
-user_inpt.capitalize! #change the first character to upper case 
+user_input.upcase! #to uppercase
+user_input.downcase! #to lowercase
+user_inpt.capitalize! #first char to uppercase 
 user_input.gsub!(exp, str)  #replace
 user_input.include? "str" #included or not
 user_input.to_s # to String
 user_input.to_i # to Integer
+user_input.to_a # to Array
 user_input.to_sym  # to Symbol
 user_input.intern  # to Symbol
 user_input.floor # round
 user_input.nil? # check nill or not, return boolean
+user_input.object_id # get memory address
 ```
 #if
 ```ruby
@@ -29,6 +31,32 @@ unless false
     puts "F"
 else
     puts "T"
+end
+```
+#Ternary
+```ruby
+true ? "true" : "false"
+```
+#case when
+```ruby
+case language
+when "JS"
+  puts "Websites!"
+when "Python"
+  puts "Science!"
+when "Ruby"
+  puts "Web apps!"
+else
+  puts "I don`t know!"
+end
+```
+same as
+```ruby
+case language
+when "JS" then puts "Websites!"
+when "Python" then puts "Science!"
+when "Ruby" then puts "Web apps!"
+else puts "I don`t know!"
 end
 ```
 #while
@@ -59,6 +87,20 @@ for num in 1..10
     puts "#{num}"
 end
 ```
+#Begin...end while
+```ruby
+begin
+    puts "type q to quit"
+    user_intput = gets.chomp
+end while user_inpust != 'q' 
+```
+#!!
+```ruby
+#if nil return else false
+str = "hello"
+!!str #return true
+!!nil #return false
+```
 #Range
 ```ruby
 1...10 # print 1-9 
@@ -88,9 +130,20 @@ str.split(":")
 ```ruby
 arr = []
 arr = [1, 2 ,3 ,4] # numbric array
-arr = ["1", "2", "3`, "4"] # string array
+arr = ["1", "2", "3", "4"] # string array
 arr = [1, "2", 3, "4"] # alow to mix 
 arr = [[0, 0][0, 0]] # 2D array
+arr.pop #pop last
+arr.push("5") #push to last
+arr << 9 # same as push
+arr.include?("1")
+arr.delete_at(2) #index
+arr.map{|x| x+2}
+arr.select{|x| x<2}
+arr.reject{|x| x>2}
+arr.uniq
+arr.index("1") # get index
+arr.index{|x| x=="b"} # same as above 
 ```
 #Hash
 ```ruby
@@ -106,6 +159,12 @@ pets = {
 }
 my_hash.each_key { |k| print k, " " } # only key
 my_hash.each_value { |v| print v, " " } # only value
+```
+#Random
+```ruby
+rand(1..100) # generate a number 1-100
+arr.shuffle
+arr.sample # get one
 ```
 #Method
 ```ruby
@@ -133,25 +192,9 @@ book_1 <=> book_2
 ```
 #Select
 ```ruby
+#array or hash
 a = grades.select {|name, grade| grade < 97}
 a = grades.select { |k, v| k == :alice }
-```
-#Ternary
-```ruby
-true ? "true" : "false"
-```
-#case when
-```ruby
-case language
-when "JS"
-  puts "Websites!"
-when "Python"
-  puts "Science!"
-when "Ruby"
-  puts "Web apps!"
-else
-  puts "I don`t know!"
-end
 ```
 Conditional assignment
 ```ruby
@@ -286,4 +329,12 @@ rescue
 ensure 
     #always
 end
+```
+#Regex
+```ruby
+regex = Regexp.new("AB")
+regex = /AB/
+regex = %r(AB)
+regex =~ "CDABE" # return index 2
+regex =~ ""
 ```
