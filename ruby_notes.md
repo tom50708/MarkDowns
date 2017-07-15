@@ -1,4 +1,4 @@
-##Basic
+# Basic
 ```ruby
 user_input = gets.chomp # user input
 user_input.upcase! #to uppercase
@@ -15,7 +15,7 @@ user_input.floor # round
 user_input.nil? # check nill or not, return boolean
 user_input.object_id # get memory address
 ```
-##if
+# if
 ```ruby
 if a ==0
     puts "zero"
@@ -25,7 +25,7 @@ else
     puts "non zero & ten"
 end
 ```
-##unless
+# unless
 ```ruby
 unless false
     puts "F"
@@ -33,11 +33,11 @@ else
     puts "T"
 end
 ```
-##Ternary
+# Ternary
 ```ruby
 true ? "true" : "false"
 ```
-##case when
+# case when
 ```ruby
 case language
 when "JS"
@@ -59,19 +59,19 @@ when "Ruby" then puts "Web apps!"
 else puts "I don`t know!"
 end
 ```
-##while
+# while
 ```ruby
 while i <0
     i+=1
 end
 ```
-##until
+# until
 ```ruby
 until i >0 
     i+=1
 end
 ```
-##loop do
+# loop do
 ```ruby
 i = 20
 loop do
@@ -81,27 +81,27 @@ loop do
     break if i <= 0
 end
 ```
-##for
+# for
 ```ruby
 for num in 1..10
     puts "#{num}"
 end
 ```
-##Begin...end while
+# Begin...end while
 ```ruby
 begin
     puts "type q to quit"
     user_intput = gets.chomp
 end while user_inpust != 'q' 
 ```
-##!!
+# !!
 ```ruby
 #if nil return else false
 str = "hello"
 !!str #return true
 !!nil #return false
 ```
-##Range
+# Range
 ```ruby
 1...10 # print 1-9 
 1..10 # print 1-10
@@ -110,7 +110,7 @@ str = "hello"
 ```ruby
 10.times {print "time"}
 ```
-##each
+# each
 ```ruby
 multi_d_array.each { |x| puts "#{x}\n" } # Array
 family.each { |x, y| puts "#{x}: #{y}" } # Hash & Array
@@ -119,14 +119,14 @@ multi_d_array.each do |x|
     puts "#{x}\n" 
 end
 ```
-##split & join
+# split & join
 ```ruby
 # array chagne to string, it looks like 1:2:3 
 str = ary.join(":") 
 # string change to array, it looks like ["1", "2", "3"]
 str.split(":") 
 ```
-##Array
+# Array
 ```ruby
 arr = []
 arr = [1, 2 ,3 ,4] # numbric array
@@ -145,7 +145,7 @@ arr.uniq
 arr.index("1") # get index
 arr.index{|x| x=="b"} # same as above 
 ```
-##Hash
+# Hash
 ```ruby
 my_hash = Hash.new
 my_hash = Hash.new(0) # set default value
@@ -160,20 +160,20 @@ pets = {
 my_hash.each_key { |k| print k, " " } # only key
 my_hash.each_value { |v| print v, " " } # only value
 ```
-##Random
+# Random
 ```ruby
 rand(1..100) # generate a number 1-100
 arr.shuffle
 arr.sample # get one
 ```
-##Method
+# Method
 ```ruby
 def my_method(arg, *args)
     args.each {|a| puts "#{arg}, #{a}" }
 end
 my_method("hi", "tom", "john", "amy")
 ```
-##Sort
+# Sort
 ```ruby
 a = [ "d", "a", "e", "c", "b" ]
 my_array.sort! # string, in
@@ -183,51 +183,51 @@ a.sort!.reverse      # DESC
 a.sort { |x,y| y <=> x }  # ["e", "d", "c", "b", "a"]  DESC
 a.sort { |x,y| x <=> Y }  # ["a", "b", "c", "d", "e"] ASC
 ```
-##combined comparison operator
+# combined comparison operator
 ```ruby
 # return 0 are the same
 # return 1 first one greater than second one
 # return -1 first one less than second one
 book_1 <=> book_2 
 ```
-##Select
+# Select
 ```ruby
 #array or hash
 a = grades.select {|name, grade| grade < 97}
 a = grades.select { |k, v| k == :alice }
 ```
-##Conditional assignment
+# Conditional assignment
 ```ruby
 a = nil # puts nil
 a ||= "hello" # puts hello
 a ||= "hey" # puts hello
 a = "hey" # puts hey
 ```
-##upto & downto
+# upto & downto
 ```ruby
 1.upto(100){|num| puts "#{num}"} # for numberic
 "Z".downto("A"){|ch| puts "#{ch}"} # for string
 ```
-##respond_to?
+# respond_to?
 ```ruby
 # recognize the Object`s method 
 # If it is. return true. If it isn`t. return false 
 1.respond_to?(:next)
 [1, 2, 3].respond_to?(:push) 
 ```
-##Shortcut
+# Shortcut
 ```ruby
    one: "1"  # same as :one => "1"
     [1, 2, 3, 4] << 5 # same as push
     "abcd" << e # same as +=
 ```
-##collect
+# collect
 ```ruby
 numbers=[1, 2, 3, 4]
 numbers.collect{|num| num*2 }
 numbers.collect!{|num| num*2 }
 ```
-##yield
+# yield
 ```ruby
 #Example 01
 def welcome(name)
@@ -248,7 +248,7 @@ end
 
 yield_name("Eric") { |n| puts "My name is #{n}." }
 ```
-##Procs
+# Procs
 ```ruby
 cube = Proc.new { |x| x ** 3 }
 [1, 2, 3].collect!(&cube)
@@ -260,7 +260,7 @@ hi.call
 numbers_array = [1, 2, 3, 4, 5, 6, 7, 8, 9] # change num to string 
 strings_array = numbers_array.collect(&:to_s)
 ```
-##lambda
+# lambda
 ```ruby
 strings = ["leonardo", "donatello", "raphael", "michaelangelo"]
 symbolize = lambda{|s| s.to_sym }
@@ -272,14 +272,14 @@ hi.call
 symbol_filter = lambda{|p| p.is_a? Symbol}
 symbols = my_array.select(&symbol_filter)
 ```
-##Variable 
+# Variable 
 ```ruby
 name # local variable
 @name # instance variable
 @@name # class variable
 $name # global variable
 ```
-##Usage of Class Method
+# Usage of Class Method
 ```ruby
 class Papa
     def Papa.cook # or self.cook
@@ -288,7 +288,7 @@ class Papa
 end
 Papa.cook # directly, use cook method in Papa, return "omelette"
 ```
-##OOP
+# OOP
 ```ruby
 # result => "pasta"
 class Papa
@@ -303,7 +303,7 @@ class Son < Papa #Son Inherits Papa
     end
 end 
 ```
-##Override & super
+# Override & super
 ```ruby
 # result => "pasta"
 #           "omelette"
@@ -320,7 +320,7 @@ class Son < Papa
     end
 end 
 ```
-##Exception handling
+# Exception handling
 ```ruby
 begin
     #first
@@ -330,7 +330,7 @@ ensure
     #always
 end
 ```
-##Regex
+# Regex
 ```ruby
 regex = Regexp.new("AB")
 regex = /AB/
