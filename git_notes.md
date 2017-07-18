@@ -1,5 +1,5 @@
 # Installation
-```ruby
+```
 brew install git
 ```
 # Basic command
@@ -44,7 +44,7 @@ git remote rm origin
 ```
 # Cloning a repo
 ```ruby
-    git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
 # PUSH
 ```ruby
