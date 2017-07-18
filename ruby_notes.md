@@ -166,12 +166,18 @@ rand(1..100) # generate a number 1-100
 arr.shuffle
 arr.sample # get one
 ```
-# Method
+
+# Select
 ```ruby
-def my_method(arg, *args)
-    args.each {|a| puts "#{arg}, #{a}" }
-end
-my_method("hi", "tom", "john", "amy")
+#array or hash
+a = grades.select {|name, grade| grade < 97}
+a = grades.select { |k, v| k == :alice }
+```
+# collect
+```ruby
+numbers=[1, 2, 3, 4]
+numbers.collect{|num| num*2 }
+numbers.collect!{|num| num*2 }
 ```
 # Sort
 ```ruby
@@ -189,12 +195,6 @@ a.sort { |x,y| x <=> Y }  # ["a", "b", "c", "d", "e"] ASC
 # return 1 first one greater than second one
 # return -1 first one less than second one
 book_1 <=> book_2 
-```
-# Select
-```ruby
-#array or hash
-a = grades.select {|name, grade| grade < 97}
-a = grades.select { |k, v| k == :alice }
 ```
 # Conditional assignment
 ```ruby
@@ -217,15 +217,16 @@ a = "hey" # puts hey
 ```
 # Shortcut
 ```ruby
-   one: "1"  # same as :one => "1"
-    [1, 2, 3, 4] << 5 # same as push
-    "abcd" << e # same as +=
+one: "1"  # same as :one => "1"
+[1, 2, 3, 4] << 5 # same as push
+"abcd" << e # same as +=
 ```
-# collect
+# Method
 ```ruby
-numbers=[1, 2, 3, 4]
-numbers.collect{|num| num*2 }
-numbers.collect!{|num| num*2 }
+def my_method(arg, *args)
+    args.each {|a| puts "#{arg}, #{a}" }
+end
+my_method("hi", "tom", "john", "amy")
 ```
 # yield
 ```ruby
