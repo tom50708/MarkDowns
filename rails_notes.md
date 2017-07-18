@@ -40,7 +40,7 @@ rails g devise user
 rake db:migrate
 rails g devise:views
 ```
-# Authentication
+### Authentication
 ```ruby
 # controller
 before_action :authenticate_user!, only: [:new, :edit, :create, :update, :destroy] 
@@ -55,5 +55,5 @@ protected
   devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:name, :email, :password,:password_confirmation) } 
 end
 ```
-# Attachment(gem:paperclip)
+### Attachment(gem:paperclip)
 [Reference](https://github.com/thoughtbot/paperclip)
