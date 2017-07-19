@@ -309,17 +309,29 @@ end
 # result => "pasta"
 #           "omelette"
 class Papa
+    
+    def initialize(name, age)
+        @name = name
+        @age = age
+    end
+
     def cook
         puts "omelette"
     end
 end
 
 class Son < Papa
+
+    def initialize(name, age, language)
+        super(name, age)
+        @language = language
+    end
+
     def cook
         puts "pasta"
         super # Papa cook method
     end
-end 
+end
 ```
 # Exception handling
 ```ruby
@@ -339,3 +351,62 @@ regex = %r(AB)
 regex =~ "CDABE" # return index 2
 regex =~ ""
 ```
+# setter & getter
+```ruby
+class Person
+    def initialize(name, age)
+        @name = name
+        @age = age
+    end
+
+    def age
+        @age
+    end
+    # = for the situation of same method name 
+    def age=(age)
+        @age = age
+    end
+end
+tom = Person.new("tom", 25)
+tom.setter(24)
+tom.getter # return 24
+```
+# attr_accessor
+```ruby
+# automatically set getter and setter
+tom.age = "30"
+puts tom.age
+```
+# self
+```ruby
+class Person
+    
+    def initialize(name)
+        @name =name
+    end
+
+    def self.eat 
+        puts "Me wanna eat"
+    end
+
+    def get_name(name)
+        self.name = "tom" #instant variable
+    end
+
+end
+# outside the class 
+Person.eat # class method
+```
+# module
+```ruby
+module Skills
+    def cook
+        puts "I can cook now."
+    end
+end
+
+class Engineer < Person
+    include Skills
+end
+```
+
