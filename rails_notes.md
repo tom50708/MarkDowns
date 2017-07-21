@@ -1,3 +1,23 @@
+# HTTP Verb
+get(read)
+post(create)
+patch(update)
+put(update)
+delete(delete)
+# Active Record
+table equals class
+datas equals object
+```ruby
+Orders.create(name: 'Tom', description: 'yoyoyo')
+Orders.find(1)
+Orders.find(1).update(name: 'new Tom')
+Orders.find(1).destroy
+
+order = Order.find(1)
+# object order includes attr_accessor 
+order.name # new Tom
+order.description # yoyoyo
+```
 # Image_tag
 ```ruby
 image_tag("icon.png", size: "16x10", alt: "Edit Entry")
