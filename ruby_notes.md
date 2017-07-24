@@ -409,4 +409,16 @@ class Engineer < Person
     include Skills
 end
 ```
+# struct 
+```ruby
+Square = Struct.new(:height, :width)
+arrays = [[20, 20],[50, 50],[100, 100]]
 
+as = arrays.collect{|array| Square.new(array[0], array[1])}
+as.collect{|a| puts "h:#{a.height} w:#{a.width}"}
+
+square = Square.new(500, 500)
+square.height # 500
+square[:height] # 500
+square["height"] # 500
+```
