@@ -422,3 +422,8 @@ square.height # 500
 square[:height] # 500
 square["height"] # 500
 ```
+# require_relative
+```ruby
+require_relative "play.rb"
+
+```
