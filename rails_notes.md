@@ -7,6 +7,16 @@ delete(delete)
 # Active Record
 table equals class
 datas equals object
+# Validate
+```ruby
+validates :email, presence: true
+validates :name, length: { minimum: 2 }
+validates :name, length: { maximum: 200 }
+```
+# rake
+```ruby
+rails db:rollback
+```
 ```ruby
 Orders.create(name: 'Tom', description: 'yoyoyo')
 Orders.find(1)
@@ -77,3 +87,19 @@ end
 ```
 # Attachment(gem:paperclip)
 [Reference](https://github.com/thoughtbot/paperclip)
+# Many to Many
+```ruby
+doctor = Doctor.create(name: "Mary")
+patient = Patient.create(name: "Sam")
+
+john = Doctor.find(1)
+
+john.patients << paitent
+```
+# gem:pry
+```ruby
+gem 'pry'
+# in action
+binding.pry
+# type params to check the imformation of parameters
+```
