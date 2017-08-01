@@ -103,3 +103,18 @@ gem 'pry'
 binding.pry
 # type params to check the imformation of parameters
 ```
+# json
+```ruby
+respond_to do |format|
+    format.html { redirect_to @post }
+    format.json { render :show, status: :ok, location: @post }
+end
+```
+```ruby
+# directly output json
+render json: @posts
+```
+# gem:rest-client
+```ruby
+gem 'rest-client'
+```
