@@ -12,6 +12,8 @@ datas equals object
 validates :email, presence: true
 validates :name, length: { minimum: 2 }
 validates :name, length: { maximum: 200 }
+validates :legacy_code, format: { with: /\A[a-zA-Z]+\z/,
+    message: "only allows letters" }
 ```
 # rake
 ```ruby
