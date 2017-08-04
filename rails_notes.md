@@ -30,7 +30,11 @@ order = Order.find(1)
 order.name # new Tom
 order.description # yoyoyo
 
-user = User.find_by(name: params[:name])   
+user = User.find_by(name: params[:name])  
+user = User.where(name: 'Tom')
+User.where(users[:name].matches("%#{user_name}%")) # like
+Person.where("name = 'cool'").where({email: '123'})
+Person.where("name ='cool'").or(email='qq')
 ```
 # Image_tag
 ```ruby
