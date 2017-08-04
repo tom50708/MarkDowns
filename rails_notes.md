@@ -29,6 +29,8 @@ order = Order.find(1)
 # object order includes attr_accessor 
 order.name # new Tom
 order.description # yoyoyo
+
+user = User.find_by(name: params[:name])   
 ```
 # Image_tag
 ```ruby
