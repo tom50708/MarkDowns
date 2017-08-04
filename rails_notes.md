@@ -120,3 +120,7 @@ render json: @posts
 ```ruby
 gem 'rest-client'
 ```
+# Command Line
+```ruby
+rails g model user --no-test-framework
+```
