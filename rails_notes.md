@@ -121,6 +121,6 @@ render json: @posts
 gem 'rest-client'
 ```
 # Command Line
-```ruby
+```
 rails g model user --no-test-framework
 ```
