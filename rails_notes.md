@@ -130,3 +130,11 @@ gem 'rest-client'
 ```
 rails g model user --no-test-framework
 ```
+# Helper Method
+```ruby
+# application_controller.rb
+helper_method: current_user
+def current_user
+@current_user
+end
+```
