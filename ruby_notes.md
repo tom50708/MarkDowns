@@ -96,7 +96,8 @@ end while user_inpust != 'q'
 ```
 # !!
 ```ruby
-#if nil return else false
+#turn variable to boolean
+#if nil return false else return true
 str = "hello"
 !!str #return true
 !!nil #return false
