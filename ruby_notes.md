@@ -428,3 +428,9 @@ square["height"] # 500
 require_relative "play.rb"
 
 ```
+# open-uri
+```ruby
+require 'open-uri'
+file = open('https://www.google.com')
+str = file.read
+```
