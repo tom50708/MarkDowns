@@ -138,3 +138,16 @@ def current_user
 @current_user
 end
 ```
+# gem:bootstrap-sass
+```ruby
+#gemfile
+gem 'bootstrap-sass'
+```
+```ruby
+# applicaton.js
+//= require bootstrap
+```
+```ruby
+# application.css change to application.css.scss
+@import "bootstrap";
+```
