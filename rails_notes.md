@@ -155,7 +155,20 @@ gem 'bootstrap-sass'
 gemfile
 ```ruby
  gem 'rspec-rails'
+ gem 'rails-controller-testing'
 ```
 ```ruby
 rails g rspec:install
+rspec spec/controllers/orders_spec.rb
+```
+orders_spec.rb
+```ruby
+require 'rails_helper'
+describe OrdersController, type: :controller do
+	it "#index" do
+		get :index
+		expect(response).to have_http_status(200)
+		expect(response).to render_template(:index)
+	end
+end
 ```
