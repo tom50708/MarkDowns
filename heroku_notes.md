@@ -1,7 +1,9 @@
 # installation
 ```
-# terminal
+# mac
 brew install heroku
+# ubuntu 
+wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 ```
 # login
 ```
