@@ -151,3 +151,11 @@ gem 'bootstrap-sass'
 # application.css change to application.css.scss
 @import "bootstrap";
 ```
+# Rspec
+gemfile
+```ruby
+ gem 'rspec-rails'
+```
+```ruby
+rails g rspec:install
+```
