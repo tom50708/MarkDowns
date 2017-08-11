@@ -186,3 +186,7 @@ flash[:danger] = "失敗"
 ```ruby
 rails s -p 4000
 ```
+# resources
+```ruby
+resources :user, only: [:create]
+```
