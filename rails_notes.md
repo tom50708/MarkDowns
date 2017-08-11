@@ -172,3 +172,17 @@ describe OrdersController, type: :controller do
 	end
 end
 ```
+# flash
+```ruby
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+```
+```ruby
+flash[:success] = "已成功下訂！"
+flash[:danger] = "失敗"
+````
+# change server port
+```ruby
+rails s -p 4000
+```
