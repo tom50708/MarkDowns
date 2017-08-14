@@ -181,7 +181,7 @@ end
 ```ruby
 flash[:success] = "已成功下訂！"
 flash[:danger] = "失敗"
-````
+```
 # change server port
 ```ruby
 rails s -p 4000
@@ -190,3 +190,9 @@ rails s -p 4000
 ```ruby
 resources :user, only: [:create]
 ```
+# redis
+```
+brew install redis 
+sudo apt-get install redis-server
+```
+
