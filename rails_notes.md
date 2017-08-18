@@ -195,6 +195,13 @@ resources :user, only: [:create]
 brew install redis 
 sudo apt-get install redis-server
 ```
+
+# ssh-copy-id
+```
+brew ssh-copy-id
+ssh-copy-id root@ip
+ssh-keygen -R ip # delete records
+```
 # Deployment
 [Reference](https://gorails.com/deploy/ubuntu/16.04)
 ```
