@@ -195,4 +195,10 @@ resources :user, only: [:create]
 brew install redis 
 sudo apt-get install redis-server
 ```
+# Deployment
+[Reference](https://gorails.com/deploy/ubuntu/16.04)
+```
+sudo vim /etc/gai.conf
+# uncomment precedence ::ffff:0:0/96  100
+```
 
