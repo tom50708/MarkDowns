@@ -208,4 +208,8 @@ ssh-keygen -R ip # delete records
 sudo vim /etc/gai.conf
 # uncomment precedence ::ffff:0:0/96  100
 ```
+# Nginx
+```
+sudo tail /var/log/nginx/error.log # check error logs
+```
 
