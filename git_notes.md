@@ -51,3 +51,8 @@ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 git push origin master
 git push -f origin master # forced
 ```
+# Reset
+```
+# back to previous commit
+git reset --hard HEAD^
+```
