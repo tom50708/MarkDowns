@@ -212,4 +212,13 @@ sudo vim /etc/gai.conf
 ```
 sudo tail /var/log/nginx/error.log # check error logs
 ```
+# PhoneGap
+Installation
+```
+npm install -g phonegap
+```
+Get started
+```
+phonegap create myApp
 
+```
