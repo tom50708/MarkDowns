@@ -27,8 +27,9 @@ a[href="www.google.com"] {
 li:nth-of-type(3) {
   
 }
-
-
+```
+# Padding & Margin
+```css
 padding: 10px 10px 10px 10px;
 
 float: left; # for RWD
