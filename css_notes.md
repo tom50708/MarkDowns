@@ -1,6 +1,6 @@
 
 # Selector 
-```
+```css
 #id {
   select all id elements
 }
