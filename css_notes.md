@@ -1,3 +1,7 @@
+# external stylesheet
+```css
+<link rel="stylesheet" type="text/css" href="style.css">
+```
 
 # Selector 
 ```css
@@ -32,6 +36,6 @@ li:nth-of-type(3) {
 ```css
 padding: 10px 10px 10px 10px;
 
-float: left; # for RWD
+float: left; #  RWD
 margin: 0 auto; # set top & bottom 0, right & left auto 
 ```
