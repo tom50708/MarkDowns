@@ -41,9 +41,9 @@ typeof 10.4
 ```
 # output
 ```javascript
-console.log('Hello') # can't perform on IE 6, 7
-alert('Hello') # show messagebox
-document.write('Hello') # override whole page 
+console.log('Hello') // can't perform on IE 6, 7
+alert('Hello') // show messagebox
+document.write('Hello') // override whole page 
 ```
 # undefine & null
 ```javascript
