@@ -39,3 +39,15 @@ padding: 10px 10px 10px 10px;
 float: left; #  RWD
 margin: 0 auto; # set top & bottom 0, right & left auto 
 ```
+# hover
+```css
+li:hover span {
+  display: inline-block;
+  width: 40px;
+}
+```
+# faded selection
+```css
+Udemy:The Web Developer Bootcamp
+Todo List: Styling Pt. 2
+```
