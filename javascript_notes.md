@@ -146,6 +146,30 @@ var storedName = localStorage.getItem('name');
 // starts from 1, 1-6
 console.log(Math.floor(Math.random() * 6) + 1
 ```
+
+# JQuery
+```javascript
+var styles = {
+    backgroundColor: "pink"
+}
+$("h1").css(styles);
+
+$("h1").css("border", "2px");
+$(".yoyo").text()="cool"; //change the text of class that you selected
+$("#cool").val(); //get the value of id
+$("ul li").attr("href", "www.google.com") //set attribute
+$("#cool").click();
+$("#cool").keypress();
+$("ul").on("click", "li", func_name);
+$("#cool").fadeOut(1000);
+$("#cool").fadeIn(1000);
+$(this).remove(); // remove the element that you picked
+$("#cool").fadeToggle(500);
+$("#cool").slideToggle();
+$("#cool").slideDown();
+$("#cool").slideUp();
+$("ul").append("<li>qq</li>");
+```
 # AJAX
 ```javascript
 $.ajax({
