@@ -1,3 +1,42 @@
+# String 
+```javascript
+const a = 'cat'.charAt(1)   //  'a'
+const b = 'cat'[1]   // 'a'
+//Length
+const aStringLength = aString.length //12
+
+//toUpperCase & toLowerCase
+const aString = 'Hello World!'
+const bString = aString.toUpperCase()
+const cString = aString.toLowerCase()
+
+//trim
+const bString = aString.trim()
+
+//indexOf
+console.log( aString.indexOf('Apple') ) // 0
+console.log( aString.indexOf('Mongo') ) // 6
+console.log( aString.indexOf('Banana') ) // 12
+console.log( aString.indexOf('Honey') ) // -1
+
+//substring
+const aString = '0123456789'
+console.log(aString.substring(0, 3)) //012
+console.log(aString.substring(5, 8)) //567
+```
+# Template strings
+```javascript
+const a = ` I 
+am
+Tom`
+const name = 'Tom'
+console.log(`Hello ${firstName}!`)
+```
+# Escape characters
+```javascript
+const aString = 'It\'s ok'
+const bString = 'This is a blackslash \\'
+```
 # Float to Integer
 ```javascript
 const floatValue = 10.55
@@ -56,14 +95,40 @@ var msg = "hello world";
 alert(msg);
 var input = prompt("what is your name?");
 ```
-# getElementById
+# Dom selector
 ```javascript
+//querySelector: first element
+
+//querySelectorAll: all the element
+
+//getElementById
 document.getElementById("demo").innerHTML = 'Hello'
+//getElementsByClassName
+var tags = document.getElementsByClassName("bolded");
+//getElementsByTagName
+var tags =document.getElementsByTagName("h1"); 
+```
+# textContent
+```javascirpt
+var myHeading = document.querySelector('h1');
+myHeading.textContent;
 ```
 # innerHTML
 ```javascript
 var myHeading = document.querySelector('h1');
 myHeading.innerHTML = 'Hello World';
+```
+# getAttribute & setAttribute
+```javascript
+var a = document.querySelector("a");
+a.getAttribute("href");
+setAttribute("href", "www.google.com");
+```
+# addEventListner
+reference:[https://developer.mozilla.org/zh-TW/docs/Web/Events
+]
+```javascript
+tag.addEventListner("click", func_name)
 ```
 # onclick
 ```javascript
@@ -76,49 +141,10 @@ document.querySelector('button').onclick = function(){
 localStorage.setItem('name', myName);
 var storedName = localStorage.getItem('name');
 ```
-# String 
-```javascript
-const a = 'cat'.charAt(1)   //  'a'
-const b = 'cat'[1]   // 'a'
-//Length
-const aStringLength = aString.length //12
-
-//toUpperCase & toLowerCase
-const aString = 'Hello World!'
-const bString = aString.toUpperCase()
-const cString = aString.toLowerCase()
-
-//trim
-const bString = aString.trim()
-
-//indexOf
-console.log( aString.indexOf('Apple') ) // 0
-console.log( aString.indexOf('Mongo') ) // 6
-console.log( aString.indexOf('Banana') ) // 12
-console.log( aString.indexOf('Honey') ) // -1
-
-//substring
-const aString = '0123456789'
-console.log(aString.substring(0, 3)) //012
-console.log(aString.substring(5, 8)) //567
-```
 # MATH
 ```javscript
 // starts from 1, 1-6
 console.log(Math.floor(Math.random() * 6) + 1
-```
-# Escape characters
-```javascript
-const aString = 'It\'s ok'
-const bString = 'This is a blackslash \\'
-```
-# Template strings
-```javascript
-const a = ` I 
-am
-Tom`
-const name = 'Tom'
-console.log(`Hello ${firstName}!`)
 ```
 # AJAX
 ```javascript
