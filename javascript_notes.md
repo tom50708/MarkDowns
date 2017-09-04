@@ -120,4 +120,14 @@ Tom`
 const name = 'Tom'
 console.log(`Hello ${firstName}!`)
 ```
-# 
+# AJAX
+```javascript
+$.ajax({
+    url: './sample.json',
+    data: {
+        id: 'a001'
+    },
+    type: 'GET',
+    dataType : 'json',
+})
+```
