@@ -125,7 +125,7 @@ a.getAttribute("href");
 setAttribute("href", "www.google.com");
 ```
 # addEventListner
-[reference] https://developer.mozilla.org/zh-TW/docs/Web/Events
+[reference]https://developer.mozilla.org/zh-TW/docs/Web/Events
 
 ```javascript
 tag.addEventListner("click", func_name)
