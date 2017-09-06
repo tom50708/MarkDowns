@@ -222,3 +222,16 @@ Get started
 phonegap create myApp
 
 ```
+# collection & member
+```ruby
+resources :posts do 
+  collection do 
+    get 'cool' # /posts/cool
+  end
+  
+  member do 
+   post 'comments' # /posts/:id/comments
+  end
+end
+```
+# collection
