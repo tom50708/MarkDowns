@@ -153,7 +153,6 @@ var styles = {
     backgroundColor: "pink"
 }
 $("h1").css(styles);
-
 $("h1").css("border", "2px");
 $(".yoyo").text()="cool"; //change the text of class that you selected
 $("#cool").val(); //get the value of id
@@ -169,6 +168,7 @@ $("#cool").slideToggle();
 $("#cool").slideDown();
 $("#cool").slideUp();
 $("ul").append("<li>qq</li>");
+
 ```
 # AJAX
 ```javascript
